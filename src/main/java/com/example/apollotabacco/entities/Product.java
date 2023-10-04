@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
 import javax.swing.*;
 import java.util.List;
@@ -13,11 +15,17 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    @NotNull
+    @NotEmpty
     private String name;
 //    private ImageIcon photo;
+@NotNull
+@NotEmpty
     private int price;
     private String manufacturer;
     private String  description;
+    @NotNull
+    @NotEmpty
     private String type;
     private long likes;
 //    private List<String> tags;
