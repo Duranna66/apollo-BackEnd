@@ -2,8 +2,6 @@ import {useEffect, useState} from "react";
 import {dataForSearch} from "../../types";
 import {getDataForSearch} from "../../utils/http.Services";
 
-
-
 function Search () {
     const [text, setText] = useState<string>('')
     const [dataForSearch, setDataForSearch] = useState<dataForSearch[]>([])

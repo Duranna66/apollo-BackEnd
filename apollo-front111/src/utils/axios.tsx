@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const baseUrl = axios.create({
-    baseUrl: process.env.APOLLO_APP_BASE_URL
+const instance = axios.create({
+    baseURL: process.env.APOLLO_APP_BASE_URL,
 });
 
-export default baseUrl;
+export default instance;
